@@ -1,0 +1,203 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(9, 9, 34);
+}
+.cont{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+.cont h1{
+    color: white;
+    margin: 30px 0px;
+}
+.cont input{
+    padding: 15px 20px;
+    width: 400px;
+    margin-bottom: 30px;
+    outline: none;
+    border-radius: 3px;
+    border:none;
+    
+}
+.cont #copy{
+    position: absolute;
+    top: 18.6%;
+    left: 62%;
+    border: none;
+    background: transparent;
+}
+.cont #copy img{
+    width: 30px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.cont img:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.cont #btn{
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    background-color: rgb(1, 209, 67);
+    color: white;
+    
+}
+.cont #btn:hover{
+    cursor: pointer;
+    background-color: rgba(0, 255, 60, 0.665);
+}
+.cont #btn:active{
+    background-color:rgb(1, 209, 67);
+}
+.cont #btn-clear{
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    background-color: rgb(209, 150, 1);
+    color: white;
+    /* font-size: 18px; */
+    margin-top: 20px;
+}
+.cont #btn-clear:hover{
+    cursor: pointer;
+    background-color: rgba(209, 150, 1, 0.789);
+}
+.cont #btn-clear:active{
+    background-color: rgb(209, 150, 1);
+}
+.toast-cont{
+    font-size: 12px;
+    font-weight: 500;
+    align-items: flex-end;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    transition: transform 1s;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transform: translateX(95%);
+    visibility: hidden;
+    
+}
+.toast-cont .toast{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    transition: moveleft 1s linear forwards;
+}
+@keyframes moveleft{
+    50%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.toast-cont .toast img{
+    margin-right: 10px;
+}
+.copied{
+    transform: translateX(0%);
+    visibility: visible;
+}
+@media(max-width:500px){
+    .cont{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .cont h1{
+        font-size: 25px;
+        margin: 25px 15px;
+    }
+    .cont input{
+        padding: 15px;
+        font-size: 14px;
+    }
+    .cont #copy{
+        position: absolute;
+        top: 13.5%;
+        left: 78%;
+        border: none;
+        background: transparent;
+    }
+    .cont #copy img{
+        width: 30px;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .cont img:hover{
+        background-color: #ccc;
+        cursor: pointer;
+    }
+    .cont #btn{
+        width: 400px;
+        padding: 15px;
+        border-radius: 5px;
+        border:none;
+        background-color: rgb(1, 209, 67);
+        color: white;
+        font-size: 18px;
+    }
+
+    .cont #btn-clear{
+        width: 400px;
+        padding: 15px;
+        border-radius: 5px;
+        border:none;
+        background-color: rgb(209, 150, 1);
+        color: white;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .toast-cont{
+        font-size: 18px;
+        font-weight: 500;
+        align-items: flex-end;
+        flex-direction: column;
+        position: absolute;
+        bottom: 10px;
+        right: 30px;
+        transition: transform 2s;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        transform: translateX(95%);
+        visibility: hidden;
+        
+    }
+    .toast-cont .toast{
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        transition: moveleft 1s linear forwards;
+    }
+    @keyframes moveleft{
+        50%{
+            transform: translateX(50%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    .toast-cont .toast img{
+        margin-right: 10px;
+    }
+    .copied{
+        transform: translateX(0%);
+        visibility: visible;
+    }
+}
