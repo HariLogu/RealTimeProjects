@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#03031d;
+    color: rgb(229, 228, 255);
+    font-family: Arial, Helvetica, sans-serif
+}
+#name{
+    font-weight: bold;
+    font-size: 25px;
+    margin:10px 0 0 25px;
+}
+.icons{
+    display: flex;
+}
+#lin,#git{
+    opacity: 20%;
+    height: 30px;
+    width: 30px;
+    margin: 10px 0 0 10px;
+}
+#lin{
+    margin-left: 45em;
+}
+#lina{
+    width: 10px;
+}
+#git{
+    margin-left: 30px;
+}
+#lin:hover{
+    opacity: 40%;
+    cursor: pointer;
+}
+#git:hover{
+    opacity: 40%;
+    cursor: pointer;
+}
+.greet{
+    display: flex;
+    margin: 10px 0 0 25px;
+}
+#greet{
+    font-size: 25px;
+    font-weight:lighter;
+}
+.wel{
+    margin-left: 15px;
+}
+.about{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+#about{
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+#fade{
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#pro{
+    margin-left: 38em;
+    border-radius: 50%;
+    margin-top: 10px;
+    filter:grayscale(100%);
+}
+#pro:hover{
+    filter:grayscale(10%);
+    box-shadow: 0 0 10px violet;
+}
+#desc{
+    opacity: 50%;
+    margin-top: -50px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.role{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+#mail a{
+    color: aliceblue;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+.skills #heading{
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.skills #desc{
+    margin-top: 15px;
+    margin-left: 0px;
+    opacity: 60%;
+    text-align: center;
+}
+.sect{
+    display: flex;
+}
+.sect img{
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    background-color: #191327;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 2px;
+    
+}
+#first{
+    margin-top: 15px;
+}
+.interest #heading{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.interest ul{
+    display: flex;
+    list-style-type: none;
+}
+.interest ul li{
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 15px;
+    background-color: #191327;
+}
+.status{
+    display: flex;
+    margin-bottom: 5px;
+    margin-top:10px;
+}
+.gitStatus #head{
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.lcStatus #lc{
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.gitStatus,.lcStatus{
+    margin-left: 100px;
+    text-align: center;
+}
+.gitdesc{
+    opacity: 60%;
+    font-weight: normal;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+.MCL{
+    margin: 15px 0 ;
+}
+.MCL p{
+    margin-bottom: 10px;
+}
+.MCL ul{
+    display: flex;
+    list-style-type: none;
+}
+.MCL ul li{
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 15px;
+    background-color: #191327;
+}
+.MCL ul li span{
+    color: rgb(132, 127, 127);
+}
+.journey #head{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.journey #desc{
+    margin-top: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+    opacity: 60%;
+}
+/* footer */
+.footer-parent{
+    position: relative;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    background-color:#1111a861;
+    border-radius: 2px;
+    /* margin-top: 25px; */
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer img{
+    width: 15px;
+    height: 15px;
+    /* border-top: 1.5px solid rgb(255, 255, 255); */
+}
+ul li{
+    margin-right: 20px;
+}
+ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+/* boxes */
+.cont{
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    border-radius: 5px;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+}
+#one{
+    font-size: 13px;
+}
+#two{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.494);
+}
+#jour_desc{
+    margin-left: 0;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-right: 100px;
+    color: rgba(255, 255, 255, 0.453);
+}
+#pre{
+    border: 1px solid #380234;
+    color: rgb(117, 11, 117);
+    font-size: 10px;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+ul li a.active{
+    background-color:#03031d;
+    border: none;
+}
+#last{
+    margin-bottom: 5em;
+}
+
+/* media queries */
+@media(max-width:500px){
+    body{
+        max-width: 450px;
+    }
+    #name{
+        font-weight: bold;
+        font-size: 32px;
+        margin:10px 0 0 15px;
+    }
+    #lin,#git{
+        opacity: 20%;
+        height: 40px;
+        width: 40px;
+        margin: 30px 10px 0px 40px;
+    }
+    .greet{
+        display: flex;
+        flex-direction:column;
+        white-space: nowrap;
+        margin: 10px 0 0 25px;
+    }
+    #greet{
+        font-size: 20px;
+        font-weight:lighter;
+        text-align: center;
+        margin-right: 30px;
+    }
+    .greet #pro{
+        margin-left: 30%;
+        height: 150px;
+        width: 150px;
+    }
+    .wel{
+        margin-left: 15px;
+        margin-top: 60px;
+    }
+    .wel #desc{
+        font-size: 18px;
+    }
+    #about{
+        font-weight: bold;
+        margin-top: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+    #fade{
+        opacity: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+    #mail a{
+        color: rgb(14, 109, 193);
+        text-decoration: none;
+    }
+    .skills #heading{
+        margin-top: 25px;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+    }
+    .skills #desc{
+        margin-top: 15px;
+        margin-left: -25px;
+        opacity: 60%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .lang #first{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .sect{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sect img{
+        margin-top: 10px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+        background-color: #191327;
+        border-radius: 10px;
+        margin-right: 10px;
+        padding: 2px;
+        
+    }
+    .interest #heading{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .interest ul{
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+    }
+    .interest ul li{
+        font-size: 15px;
+        padding: 9px;
+        border-radius: 3px;
+        margin-right: 15px;
+        background-color: #191327;
+        margin-top: 10px;
+    }
+    .status{
+        display: flex;
+        margin-bottom: 5px;
+        margin-top:10px;
+        flex-direction: column;
+    }
+    .gitStatus #head{
+        margin-top: 10px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-right: 6em;
+        font-size: 20px;
+    }
+    .gitStatus .gitdesc{
+        font-size: 13px;
+        margin-left:-7em;
+    }
+    .gitStatus img{
+        margin-left:-80px;
+    }
+    .lcStatus #lc{
+        margin-top: 10px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-right: 6em;
+        font-size: 20px;
+    }
+    .lcStatus .gitdesc{
+        font-size: 13px;
+        margin-left:-7em;
+    }
+    .lcStatus img{
+        margin-left: -80px;
+    }
+    .gitStatus,.lcStatus{
+        margin-left: 60px;
+        text-align: center;
+    }
+    .MCL p{
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .MCL ul{
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+    }
+    .MCL ul li{
+        font-size: 16px;
+        padding: 9px;
+        border-radius: 3px;
+        margin-right: 15px;
+        margin-top: 10px;
+        background-color: #191327;
+        flex-direction: row;
+    }
+    .journey #desc{
+        margin-left: -10px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        text-align: center;
+        opacity: 60%;
+        font-size: 16px;
+    }
+    .footer-parent{
+        position: relative;
+        width: 110%;
+    }
+    .footer{
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+        background-color:#1111a861;
+        border-radius: 2px;
+        /* margin-top: 25px; */
+        margin-top: auto;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+    }
+    .footer img{
+        width: 20px;
+        height: 20px;
+        
+        /* border-top: 1.5px solid rgb(255, 255, 255); */
+    }
+    ul li a.active{
+        background-color:#03031d;
+        border: none;
+        border-radius: 30%;
+    }
+    .cont{
+        margin: 10px 0 0 10px;
+        padding: 10px;
+        border: 3px solid rgba(255, 255, 255, 0.274);
+        border-radius: 10px;
+    }
+    .first{
+        display: flex;
+        justify-content: space-between;
+    }
+    .first #one{
+        font-size: 20px;
+    }
+    .first #one span{
+        font-weight: bold;
+        border: 2px solid;
+        font-size:12px ;
+        color: rgb(203, 11, 203);
+    }
+    .first #two{
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.494);
+    }
+    #jour_desc{
+        margin-left: 0;
+        font-size: 14px;
+        margin-top: 5px;
+        margin-right: 100px;
+        color: rgba(255, 255, 255, 0.453);
+    }
+}
+
+
+
+
+
+
+
+
