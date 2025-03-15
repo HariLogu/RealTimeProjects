@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="buttons">
+        <button id="first" onclick="successPopup(successMsg)">Success</button>
+        <button id="second" onclick="successPopup(errorMsg)">Error</button>
+        <button id="third" onclick="successPopup(invalidMsg)">Invalid</button>
+    </div>
+    <div class="popup" id="popup"></div>
+</body>
+</html>
+
+
+<script>
+    let popup=document.getElementById("popup");
+    let successMsg=`<img src="check.png" > Submitted Successfully`;
+    let errorMsg=`<img src="xmark.png">  Please fix the error!`;
+    let invalidMsg=`<img src="excla.png">Invalid credentials`;
+
+    
+    function successPopup(Msg){
+        let toast=document.createElement('div');
+        toast.classList.add('toast');
+        toast.innerHTML=Msg;
+        popup.appendChild(toast);
+
+        if(Msg.includes("error")){
+            toast.classList.add("error")
+        }
+
+        if(Msg.includes("Invalid")){
+            toast.classList.add("invalid")
+        }
+
+        setTimeout(()=>{
+            toast.remove()
+        },5000)
+    }
+</script>

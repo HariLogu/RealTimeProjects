@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: rgb(15, 12, 47);
+}
+.buttons {
+  display: flex;
+  margin: 20px;
+}
+.buttons button {
+  margin-right: 3em;
+  padding: 9px 15px;
+  width: 80px;
+  font-size: 13px;
+  background-color: burlywood;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
+#first:hover,
+#second:hover,
+#third:hover {
+  box-shadow: 0px 0px 5px yellow;
+  border-bottom: 2px solid black;
+  transform: scale(1.07);
+}
+.popup {
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  align-items: flex-end;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  transition: transform 5s;
+  /* visibility: hidden; */
+}
+.toast {
+  background-color: white;
+  width: 260px;
+  padding: 13px 5px;
+  box-shadow: 0px 0px 5px #fff;
+  border-radius: 2px;
+  display: flex;
+  margin: 10px 5px;
+  align-items: center;
+  position: relative;
+  transform: translateX(100%);
+  animation:moveleft 1s linear forwards;
+}
+@keyframes moveleft{
+  50%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+.popup p {
+  margin-left: 20px;
+}
+.toast img {
+  width: 23px;
+  margin: 0 10px;
+  /* background-color: green; */
+  border-radius: 50%;
+}
+.toast::after{
+  background-color: green;
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  animation: anime 5s linear forwards;
+}
+.toast.error::after{
+  background-color: red;
+}
+.toast.invalid::after{
+  background-color: rgb(255, 196, 0);
+}
+@keyframes anime{
+  25%{
+    width: 75%;
+  }
+  50%{
+    width: 50%;
+  }
+  75%{
+    width: 25%;
+  }
+  100%{
+    width: 0%;
+  }
+}
